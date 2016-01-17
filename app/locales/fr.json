@@ -1,0 +1,14 @@
+{
+  "home": {
+    "description": "Home menu name",
+    "message": "Page d'accueil"
+  },
+  "hours": {
+    "description": "...",
+    "message": "hours"
+  },
+  "minutes": {
+    "description": "...",
+    "message": "minutes"
+  }
+}

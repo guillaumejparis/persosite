@@ -53,6 +53,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
 
+  <link rel="import" href="..\bower_components/i18n-msg/i18n-msg.html">
+
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
 
@@ -61,7 +63,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <body unresolved class="fullbleed layout vertical">
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
-
     <paper-drawer-panel id="paperDrawerPanel">
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
@@ -75,12 +76,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
           <a data-route="home" href="{{baseUrl}}">
             <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+            <span><i18n-msg msgid="home">BrokenHome</i18n-msg></span>
           </a>
 
-          <a data-route="users" href="{{baseUrl}}users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+          <a data-route="projects" href="{{baseUrl}}projects">
+            <iron-icon icon="lightbulb-outline"></iron-icon>
+            <span>Projects</span>
           </a>
 
           <a data-route="contact" href="{{baseUrl}}contact">
@@ -99,8 +100,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <span class="flex"></span>
 
           <!-- Toolbar icons -->
-          <paper-icon-button icon="refresh"></paper-icon-button>
-          <paper-icon-button icon="search"></paper-icon-button>
+          <paper-icon-button icon="language" on-tap="changeLanguage"></paper-icon-button>
+          <paper-icon-button icon="power-settings-new" on-tap="handleTapShutdown"></paper-icon-button>
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
@@ -115,27 +116,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-toolbar>
 
         <!-- Main Content -->
-        <div class="content">
+        <div id="content-main-class" class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
             </section>
 
-            <section data-route="users">
+            <section data-route="projects">
               <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
-              </paper-material>
-            </section>
-
-            <section data-route="user-info">
-              <paper-material elevation="1">
-                <h2 class="page-title">User: {{params.name}}</h2>
-                <div>This is {{params.name}}'s section</div>
+                <h2 class="page-title">Projects</h2>
+                <p>This is the projects section</p>
               </paper-material>
             </section>
 
@@ -154,6 +144,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <paper-toast id="toast">
       <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
     </paper-toast>
+
+    <paper-toast id="toast-power" text="Put on the light!!"></paper-toast>
 
     <!-- Uncomment next block to enable Service Worker support (1/2) -->
     <!--
@@ -174,6 +166,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   </template>
 
+  <!-- Language switcher - need to be in the main file  -->
+  <script>
+    document.addEventListener('HTMLImportsLoaded', function() {
+      I18nMsg.lang = 'en';
+      Platform.performMicrotaskCheckpoint();
+    });
+
+    app.changeLanguage = function() {
+      if (I18nMsg.lang === 'en') {
+        I18nMsg.lang = 'fr';
+      } else {
+        I18nMsg.lang = 'en';
+      }
+      Platform.performMicrotaskCheckpoint();
+    };
+  </script>
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->

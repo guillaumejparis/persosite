@@ -12,3 +12,13 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+.body-opacity-full {
+  opacity: 0.1;
+  background-color: black;
+  z-index: 999;
+}
+
+.content-opacity-full {
+  background-color: #fafafa;
+}

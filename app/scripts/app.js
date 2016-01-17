@@ -14,7 +14,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // and give it some initial binding values
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   var app = document.querySelector('#app');
-
   // Sets app default base URL
   app.baseUrl = '/';
   if (window.location.port === '') {  // if production
@@ -76,6 +75,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   app.closeDrawer = function() {
     app.$.paperDrawerPanel.closeDrawer();
+  };
+
+  app.handleTapShutdown = function() {
+    if (document.body.className.match('body-opacity-full')) {
+      document.body.className = document.body.className
+        .replace(/(?:^|\s)body-opacity-full(?!\S)/g, '');
+      document.getElementById('content-main-class').className =
+        document.getElementById('content-main-class')
+        .className.replace(/(?:^|\s)content-opacity-full(?!\S)/g, '');
+    } else {
+      document.body.className += ' body-opacity-full';
+      document.getElementById('content-main-class').className += ' content-opacity-full';
+    }
   };
 
 })(document);
