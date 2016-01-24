@@ -3,12 +3,12 @@
     "description": "Home menu name",
     "message": "Page d'accueil"
   },
-  "hours": {
-    "description": "...",
-    "message": "hours"
+  "projects": {
+    "description": "Projects menu name",
+    "message": "Projets"
   },
-  "minutes": {
-    "description": "...",
-    "message": "minutes"
+  "contact": {
+    "description": "Contact menu name",
+    "message": "Contact"
   }
 }

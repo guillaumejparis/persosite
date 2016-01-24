@@ -54,7 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- endreplace-->
 
   <link rel="import" href="..\bower_components/i18n-msg/i18n-msg.html">
-
+  <link rel="import" href="..\bower_components/polymer-themes/ice.html">
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles">
     body {
@@ -67,7 +67,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <body unresolved class="fullbleed layout vertical">
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
-    <paper-drawer-panel id="paperDrawerPanel">
+    <paper-drawer-panel id="paperDrawerPanel" force-narrow="false">
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
 
@@ -80,26 +80,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
           <a data-route="home" href="{{baseUrl}}">
             <iron-icon icon="home"></iron-icon>
-            <span><i18n-msg msgid="home">BrokenHome</i18n-msg></span>
+            <span><i18n-msg msgid="home">Home</i18n-msg></span>
           </a>
 
           <a data-route="projects" href="{{baseUrl}}projects">
             <iron-icon icon="lightbulb-outline"></iron-icon>
-            <span>Projects</span>
+            <span><i18n-msg msgid="projects">Projects</i18n-msg></span>
           </a>
 
           <a data-route="contact" href="{{baseUrl}}contact">
             <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+            <span><i18n-msg msgid="contact">Contact</i18n-msg></span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
 
       <!-- Main Area -->
-      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+      <paper-scroll-header-panel main id="headerPanelMain" fixed>
 
         <!-- Main Toolbar -->
-        <paper-toolbar id="mainToolbar" class="tall">
+        <paper-toolbar id="mainToolbar">
           <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
           <span class="flex"></span>
 
@@ -112,11 +112,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <div class="app-name">Paris Guillaume</div>
           </div>
 
-          <!-- Application sub title -->
-          <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">Projects and Discoveries</div>
-          </div>
-
         </paper-toolbar>
 
         <!-- Main Content -->
@@ -127,10 +122,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="projects">
-              <paper-material elevation="1">
-                <h2 class="page-title">Projects</h2>
-                <p>This is the projects section</p>
-              </paper-material>
+              <projects-main></projects-main>
             </section>
 
             <section data-route="contact">

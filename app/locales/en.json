@@ -3,12 +3,48 @@
     "description": "Home menu name",
     "message": "Home"
   },
-  "hours": {
-    "description": "...",
-    "message": "hours"
+  "projects": {
+    "description": "Projects menu name",
+    "message": "Projects"
   },
-  "minutes": {
-    "description": "...",
-    "message": "minutes"
+  "contact": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "ludaoo": {
+    "description": "Project Ludaoo",
+    "message": "Ludaoo"
+  },
+  "ludaooProject": {
+    "description": "Project Ludaoo",
+    "message": "Project:  Ludaoo"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
+  },
+  "test": {
+    "description": "Contact menu name",
+    "message": "Contact"
   }
 }
