@@ -1,0 +1,60 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+<link rel="import" href="..\..\bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="..\..\bower_components/paper-styles/color.html">
+
+<dom-module id="main-levels">
+  <template>
+    <style is="custom-style">
+      :host {
+        display: block;
+      }
+      paper-slider {
+        width: 100%;
+      }
+      paper-slider.red {
+        --paper-slider-knob-color: var(--paper-red-500);
+        --paper-slider-active-color: var(--paper-red-500);
+      }
+      paper-slider.green {
+        --paper-slider-knob-color: var(--paper-green-500);
+        --paper-slider-active-color: var(--paper-green-500);
+      }
+      paper-slider.blue {
+        --paper-slider-knob-color: var(--paper-light-blue-500);
+        --paper-slider-active-color: var(--paper-light-blue-500);
+      }
+      h2 {
+        font-weight: normal;
+      }
+    </style>
+    <h2><i18n-msg msgid="computer-skills">Computer skills</i18n-msg></h2>
+    <paper-slider pin snaps max="10" max-markers="10" step="1" value="5" active="false"></paper-slider>
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'main-levels',
+
+      properties: {
+        foo: {
+          type: String,
+          value: 'main-levels',
+          notify: true
+        }
+      }
+    });
+  })();
+  </script>
+</dom-module>

@@ -54,12 +54,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- endreplace-->
 
   <link rel="import" href="..\bower_components/i18n-msg/i18n-msg.html">
-  <link rel="import" href="..\bower_components/polymer-themes/ice.html">
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles">
+    /*
     body {
       background-image: url("images/landscape_1_by_thekid221-d7xb0ga.jpg");
     }
+    */
   </style>
 
 </head>
@@ -119,17 +120,37 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
+              <paper-material elevation="1">
+                <h2 class="page-title"><i18n-msg msgid="home">Home</i18n-msg></h2>
+              </paper-material>
+              <paper-material elevation="1">
+                <main-levels></main-levels>
+              </paper-material>
+              <page-end></page-end>
             </section>
 
             <section data-route="projects">
-              <projects-main></projects-main>
+              <paper-material elevation="1">
+                <h2 class="page-title"><i18n-msg msgid="projects">Projects</i18n-msg></h2>
+              </paper-material>
+              <paper-material elevation="1">
+                <projects-school></projects-school>
+              </paper-material>
+              <paper-material elevation="1">
+              </paper-material>
+              <paper-material elevation="1">
+              </paper-material>
+              <page-end></page-end>
             </section>
 
             <section data-route="contact">
               <paper-material elevation="1">
-                <h2 class="page-title">Contact</h2>
+                <h2 class="page-title"><i18n-msg msgid="contact">Contact</i18n-msg></h2>
+              </paper-material>
+              <paper-material elevation="1">
                 <contact-form></contact-form>
               </paper-material>
+              <page-end></page-end>
             </section>
 
           </iron-pages>

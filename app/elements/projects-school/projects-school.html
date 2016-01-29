@@ -1,0 +1,110 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+<link rel="import" href="..\..\bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="..\..\bower_components/paper-styles/color.html">
+
+<dom-module id="projects-school">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      div {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 16px;
+        padding: 16px;
+        border-radius: 2px;
+        @apply(--layout-flex);
+      }
+      .paper-material-img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 16px;
+        vertical-align: middle;
+      }
+      .container {
+        @apply(--layout-horizontal);
+      }
+      #hidden-container {
+      }
+      #fab-expand {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      paper-fab.blue {
+        --paper-fab-background: var(--default-primary-color);
+        --paper-fab-keyboard-focus-background: var(--dark-primary-color);
+      }
+      h2 {
+        font-weight: normal;
+      }
+    </style>
+    <h2><i18n-msg msgid="school-projects">School Projects</i18n-msg></h2>
+    <section class="container">
+      <div>
+        <iron-image class="paper-material-img" sizing="cover" src="../../images/projects-images/test.png"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+      <div>
+        <iron-image class="paper-material-img" sizing="cover" src="../../images/projects-images/test.png"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+      <div>
+        <iron-image class="paper-material-img" sizing="cover" src="../../images/projects-images/test.png"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+    </section>
+    <section class="container" id="hidden-container" hidden>
+      <div>
+        <iron-image class="paper-material-img" sizing="cover" src="../../images/projects-images/test.png"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+      <div>
+        <iron-image class="paper-material-img" sizing="cover"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+      <div>
+        <iron-image class="paper-material-img" sizing="cover" src="../../images/projects-images/test.png"></iron-image>
+        <i18n-msg msgid="test-test">Hello this the project</i18n-msg>
+      </div>
+    </section>
+    <paper-fab mini icon="icons:expand-more" title="more" id="fab-expand" class="blue" on-tap="hideSeek"></paper-fab>
+  </template>
+  <script>
+    (function() {
+      'use strict';
+
+      var hidden = true;
+      Polymer({
+        is: 'projects-school',
+        properties: {
+          foo: {
+            type: String,
+            value: 'projects-school',
+            notify: true
+          }
+        },
+        hideSeek: function() {
+          if (hidden) {
+            document.getElementById('hidden-container').hidden = false;
+            document.getElementById('fab-expand').icon = 'icons:expand-less';
+          } else {
+            document.getElementById('hidden-container').hidden = true;
+            document.getElementById('fab-expand').icon = 'icons:expand-more';
+          }
+          hidden = !hidden;
+        }
+      });
+    })();
+  </script>
+</dom-module>
