@@ -19,29 +19,13 @@
     "description": "Project Ludaoo",
     "message": "Project:  Ludaoo"
   },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
+  "ludaooProject": {
+    "description": "Basic",
+    "message": ""
   },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
-  },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
-  },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
-  },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
-  },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
+  "desc_project-misc_01": {
+    "description": "Description Ludaoo",
+    "message": "Ludaoo is too cool"
   },
   "test": {
     "description": "Contact menu name",

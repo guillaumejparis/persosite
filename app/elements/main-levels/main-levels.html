@@ -13,32 +13,108 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="..\..\bower_components/paper-styles/color.html">
 
 <dom-module id="main-levels">
+  <link rel="import" href="../../styles/classical/classical.css" type="css">
   <template>
     <style is="custom-style">
       :host {
         display: block;
       }
-      paper-slider {
-        width: 100%;
-      }
-      paper-slider.red {
-        --paper-slider-knob-color: var(--paper-red-500);
-        --paper-slider-active-color: var(--paper-red-500);
-      }
-      paper-slider.green {
-        --paper-slider-knob-color: var(--paper-green-500);
-        --paper-slider-active-color: var(--paper-green-500);
-      }
-      paper-slider.blue {
-        --paper-slider-knob-color: var(--paper-light-blue-500);
-        --paper-slider-active-color: var(--paper-light-blue-500);
-      }
       h2 {
         font-weight: normal;
+        font-family: 'Roboto', 'Noto', sans-serif;
+      }
+      div {
+        font-family: 'Roboto', 'Noto', sans-serif;
+      }
+      paper-progress {
+        width: 100%;
+      }
+      paper-progress.maincolor {
+        --paper-progress-active-color: var(--dark-primary-color);
+        --paper-progress-container-color: var(--light-primary-color);
+      }
+      .medium-font{
+        font-size: medium;
+      }
+      .bloc-div {
+        display: inline-block;
+        width: 49%;
+      }
+      .bloc-first {
+        padding-right: 1%;
+      }
+      .bloc-second {
+        padding-left: 1%;
+      }
+      .bloc-div-quad {
+        display: inline-block;
+        width: 24%;
+      }
+      .bloc-first-quad {
+        padding-right: 1%;
+      }
+      .bloc-second-quad {
+        padding-right: 1%;
+      }
+      .bloc-third-quad {
+        padding-left: 1%;
+      }
+      .bloc-quad-quad {
+        padding-left: 1%;
       }
     </style>
-    <h2><i18n-msg msgid="computer-skills">Computer skills</i18n-msg></h2>
-    <paper-slider pin snaps max="10" max-markers="10" step="1" value="5" active="false"></paper-slider>
+    <h2><i18n-msg msgid="programming-skills">Programming skills</i18n-msg></h2>
+    <div class="medium-font"><i18n-msg msgid="main-languages">Main languages</i18n-msg></div>
+    <div>
+      <p><i18n-msg msgid="android">Android</i18n-msg></p>
+      <paper-progress class="maincolor" value="85"></paper-progress>
+    </div>
+    <div>
+      <p><i18n-msg msgid="angularJS">AngularJS</i18n-msg></p>
+      <paper-progress class="maincolor" value="80"></paper-progress>
+    </div>
+    <div>
+      <div class="bloc-div bloc-first">
+        <p><i18n-msg msgid="html_css">HTML/CSS</i18n-msg></p>
+        <paper-progress class="maincolor" value="90"></paper-progress>
+      </div><div class="bloc-div bloc-second">
+        <p><i18n-msg msgid="nodejs">NodeJS</i18n-msg></p>
+        <paper-progress class="maincolor" value="50"></paper-progress>
+      </div>
+    </div>
+    <div>
+      <div class="bloc-div bloc-first">
+        <p><i18n-msg msgid="JS">JS</i18n-msg></p>
+        <paper-progress class="maincolor" value="80"></paper-progress>
+      </div><div class="bloc-div bloc-second">
+      <p><i18n-msg msgid="mongodb">MongoDB</i18n-msg></p>
+      <paper-progress class="maincolor" value="60"></paper-progress>
+    </div>
+    </div>
+    <div>
+      <div class="bloc-div bloc-first">
+        <p><i18n-msg msgid="sql">SQL</i18n-msg></p>
+        <paper-progress class="maincolor" value="90"></paper-progress>
+      </div><div class="bloc-div bloc-second">
+        <p><i18n-msg msgid="php">PHP</i18n-msg></p>
+        <paper-progress class="maincolor" value="80"></paper-progress>
+      </div>
+    </div>
+    <div>
+      <div class="bloc-div-quad bloc-first-quad">
+        <p><i18n-msg msgid="java">Java</i18n-msg></p>
+        <paper-progress class="maincolor" value="80"></paper-progress>
+      </div><div class="bloc-div-quad bloc-second-quad">
+      <p><i18n-msg msgid="c++">C++</i18n-msg></p>
+      <paper-progress class="maincolor" value="70"></paper-progress>
+      </div><div class="bloc-div-quad bloc-third-quad">
+        <p><i18n-msg msgid="c#">C#</i18n-msg></p>
+        <paper-progress class="maincolor" value="65"></paper-progress>
+      </div><div class="bloc-div-quad bloc-quad-quad">
+      <p><i18n-msg msgid="python">Python</i18n-msg></p>
+      <paper-progress class="maincolor" value="75"></paper-progress>
+    </div>
+    </div>
   </template>
   <script>
   (function() {

@@ -13,7 +13,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="..\..\bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="..\..\bower_components/paper-dialog/paper-dialog.html">
 
-<dom-module id="projects-school">
+<dom-module id="projects-miscellaneous">
   <link rel="import" href="../../styles/classical/classical.css" type="css">
   <template>
     <style>
@@ -27,7 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .container-title {
         margin: 20px;
       }
-      .image-project-school {
+      .image-project-misc {
         height: 300px;
         display: block;
         margin: 0 50px;
@@ -90,12 +90,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         overflow: auto;
         font-family: 'Roboto', 'Noto', sans-serif;
       }
-      .button-project-school {
+      .button-project-misc {
         position: absolute;
         right: 0;
         bottom: 0;
       }
-      .desc-project-school {
+      .desc-project-misc {
         font-family: 'Roboto', 'Noto', sans-serif;
         font-size: large;
         margin: 25px 50px
@@ -111,8 +111,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         --paper-icon-button-ink-color: var(--dark-primary-color);
       }
     </style>
-    <h2><i18n-msg msgid="school-projects">School Projects</i18n-msg></h2>
-    <iron-ajax url="./projects-school.json" last-response="{{data}}" auto></iron-ajax>
+    <h2><i18n-msg msgid="miscellaneous-projects">Miscellaneous</i18n-msg></h2>
+    <iron-ajax url="./projects-misc.json" last-response="{{data}}" auto></iron-ajax>
     <iron-list items="[[data]]" as="item" grid>
       <template>
         <div class="photoContainer">
@@ -135,44 +135,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </template>
     </iron-list>
-    <paper-dialog id="dialog-project-school" class="dialog">
-      <h2 id="title-project-school">Title</h2>
-      <div class="image-project-school">
+    <paper-dialog id="dialog-project-misc" class="dialog">
+      <h2 id="title-project-misc">Title</h2>
+      <div class="image-project-misc">
         <iron-image class="buttonContent" sizing="cover"
                     src="../../images/projects-images/test.png">
         </iron-image>
       </div>
-      <p class="desc-project-school"><i18n-msg id="desc-project-school" msgid="desc">...</i18n-msg></p>
-      <div class="buttons button-project-school">
+      <p class="desc-project-misc"><i18n-msg id="desc-project-misc" msgid="desc">...</i18n-msg></p>
+      <div class="buttons button-project-misc">
         <paper-button class="button-close" dialog-confirm autofocus><i18n-msg msgid="close">Close</i18n-msg></paper-button>
       </div>
     </paper-dialog>
   </template>
   <script>
-    (function() {
-      'use strict';
+  (function() {
+    'use strict';
 
-      Polymer({
-        is: 'projects-school',
+    Polymer({
+      is: 'projects-miscellaneous',
 
-        properties: {
-          foo: {
-            type: String,
-            value: 'projects-school',
-            notify: true
-          }
-        },
-        openPaperCard: function(e) {
-          var title = e.currentTarget.getAttribute('title');
-          var desc = e.currentTarget.getAttribute('desc');
-          var dialog = document.getElementById('dialog-project-school');
-          document.getElementById('title-project-school').textContent = title;
-          document.getElementById('desc-project-school').setAttribute('msgid', desc);
-          if (dialog) {
-            dialog.open();
-          }
+      properties: {
+        foo: {
+          type: String,
+          value: 'projects-miscellaneous',
+          notify: true
         }
-      });
-    })();
+      },
+      openPaperCard: function(e) {
+        var title = e.currentTarget.getAttribute('title');
+        var desc = e.currentTarget.getAttribute('desc');
+        var dialog = document.getElementById('dialog-project-misc');
+        document.getElementById('title-project-misc').textContent = title;
+        document.getElementById('desc-project-misc').setAttribute('msgid', desc);
+        if (dialog) {
+          dialog.open();
+        }
+      }
+    });
+  })();
   </script>
 </dom-module>
