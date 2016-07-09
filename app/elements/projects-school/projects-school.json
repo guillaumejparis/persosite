@@ -1,6 +1,6 @@
 [
-  {"name": "Ludaoo", "address": "http://www.ludaoo.eu", "address-displayed": "www.ludaoo.eu", "desc": "desc_project-school_01"},
-  {"name": "Mediblog", "address": "http://www.ludaoo.eu", "address-displayed": "www.ludaoo.eu", "desc": "desc_project-school_02"},
-  {"name": "Hayroad", "address": "http://www.ludaoo.eu", "address-displayed": "www.ludaoo.eu", "desc": "desc_project-school_03"},
-  {"name": "MDHealth", "address": "http://www.ludaoo.eu", "address-displayed": "www.ludaoo.eu", "desc": "desc_project-school_04"}
+  {"name": "Ludaoo", "address": "http://www.ludaoo.eu", "address-displayed": "ludaoo.eu", "desc": "desc_project-school_01"},
+  {"name": "MediBlog", "address": "https://github.com/MediBlog/Android-Application/tree/Development", "address-displayed": "github.com/MediBlog", "desc": "desc_project-school_02"},
+  {"name": "Hayroad", "address": "https://foin.local.cool/", "address-displayed": "foin.local.cool", "desc": "desc_project-school_03"},
+  {"name": "MDHelper", "address": "https://github.com/Frutch/MDHelper-android/tree/development", "address-displayed": "github.com/MDHelper", "desc": "desc_project-school_04"}
 ]

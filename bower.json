@@ -2,15 +2,14 @@
   "name": "polymer-starter-kit",
   "private": true,
   "dependencies": {
-    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
     "neon-elements": "PolymerElements/neon-elements#^1.0.0",
-    "page": "visionmedia/page.js#~1.6.4",
-    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
-    "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
-    "polymer": "Polymer/polymer#^1.2.0",
-    "paper-menu": "PolymerElements/paper-menu#4fecb43601",
-    "iron-form": "PolymerElements/iron-form#~1.0.13",
-    "i18n-msg": "~1.0.3"
+    "page": "visionmedia/page.js#~1.7.1",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "platinum-elements": "PolymerElements/platinum-elements#^2.0.0",
+    "polymer": "Polymer/polymer#^1.6.0",
+    "i18n-msg": "~1.0.5",
+    "mdi": "^1.6.50"
   },
   "devDependencies": {
     "web-component-tester": "*"

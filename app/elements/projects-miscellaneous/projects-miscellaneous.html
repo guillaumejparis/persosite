@@ -110,6 +110,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         color: var(--default-primary-color);
         --paper-icon-button-ink-color: var(--dark-primary-color);
       }
+      .item-detail-msg {
+        max-lines: 1;
+        text-overflow-ellipsis: hidden;
+      }
     </style>
     <h2><i18n-msg msgid="miscellaneous-projects">Miscellaneous</i18n-msg></h2>
     <iron-ajax url="./projects-misc.json" last-response="{{data}}" auto></iron-ajax>
@@ -123,7 +127,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </iron-image>
             </paper-button>
             <div class="detail">
-              <div>[[item.desc]]</div>
+              <div class="item-detail-msg"><i18n-msg msgid="[[item.desc]]">[[item.name]]</i18n-msg></div>
             </div>
           </div>
           <div class="container-title">

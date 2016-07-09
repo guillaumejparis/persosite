@@ -23,9 +23,12 @@
     "description": "Description Ludaoo",
     "message": "Ludaoo is too cool"
   },
+  "desc_project-perso_01": {
+    "description": "Description Persosite",
+    "message": "This is my personal site, made with full Polymer.\n Test"
+  },
   "test": {
     "description": "Contact menu name",
     "message": "Contact"
-  },
-  "introductionText": ""
+  }
 }
