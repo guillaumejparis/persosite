@@ -1,14 +1,18 @@
 {
-  "home": {
-    "description": "Home menu name",
-    "message": "Page d'accueil"
-  },
-  "projects": {
-    "description": "Projects menu name",
-    "message": "Projets"
-  },
-  "contact": {
-    "description": "Contact menu name",
-    "message": "Contact"
-  }
+"home" : {
+"description" : "Home menu name",
+"message" : "Page d'accueil"
+},
+"projects" : {
+"description" : "Projects menu name",
+"message" : "Projets"
+},
+"contact" : {
+"description" : "Contact menu name",
+"message" : "Contact"
+},
+"introductionText" : {
+  "description": "Introduction text",
+  "message": "Actuellement en études à la Haye aux Pays-Bas dans le cadre de l'année d’internationalisation à Epitech. Je suis très intéressé par les nouvelles technologies et principalement par l'univers Android. Pour ma 5e année il m'est possible d'avoir une alternance pour le premier semestre et ensuite un stage pour le deuxième semestre."
+}
 }

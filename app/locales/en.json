@@ -16,10 +16,6 @@
     "message": "Ludaoo"
   },
   "ludaooProject": {
-    "description": "Project Ludaoo",
-    "message": "Project:  Ludaoo"
-  },
-  "ludaooProject": {
     "description": "Basic",
     "message": ""
   },
@@ -30,5 +26,6 @@
   "test": {
     "description": "Contact menu name",
     "message": "Contact"
-  }
+  },
+  "introductionText": ""
 }
