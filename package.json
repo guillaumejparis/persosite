@@ -4,7 +4,6 @@
   "description": "Perso site using Polymer",
   "main": "gulpfile.js",
   "dependencies": {
-    "mdi": "^1.4.57",
     "browser-sync": "^2.7.7",
     "connect-history-api-fallback": "^1.1.0",
     "del": "^2.0.2",
@@ -30,6 +29,7 @@
     "gulp-useref": "^2.1.0",
     "gulp-vulcanize": "^6.0.0",
     "jshint-stylish": "^2.0.0",
+    "mdi": "^1.5.54",
     "merge-stream": "^1.0.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
@@ -66,7 +66,8 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.2",
     "vulcanize": ">= 1.4.2",
-    "web-component-tester": "^3.4.0"},
+    "web-component-tester": "^3.4.0"
+  },
   "scripts": {
     "test": "gulp test:local",
     "start": "gulp serve",
