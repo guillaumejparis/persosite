@@ -146,9 +146,14 @@ gulp.task('copy', function() {
     'bower_components/**/*'
   ]).pipe(gulp.dest(dist('bower_components')));
 
+  var locales = gulp.src([
+    'app/locales/**/*json'
+  ]).pipe(gulp.dest(dist('locales')));
+
   var elements = gulp.src(['app/elements/**/*.html',
       'app/elements/**/*.css',
-      'app/elements/**/*.js'
+      'app/elements/**/*.js',
+      'app/elements/**/*.json'
     ])
     .pipe(gulp.dest(dist('elements')));
 
@@ -162,7 +167,7 @@ gulp.task('copy', function() {
     .pipe($.rename('elements.vulcanized.html'))
     .pipe(gulp.dest(dist('elements')));
 
-  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox)
+  return merge(app, bower, elements, locales, vulcanized, swBootstrap, swToolbox)
     .pipe($.size({
       title: 'copy'
     }));
@@ -301,8 +306,7 @@ gulp.task('default', ['clean'], function(cb) {
   runSequence(
     ['copy', 'styles'],
     'elements',
-    ['lint', 'images', 'fonts', 'html'],
-    'vulcanize', // 'cache-config',
+    ['lint', 'images', 'fonts', 'html'], // 'cache-config',
     cb);
 });
 
