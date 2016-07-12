@@ -112,7 +112,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       .item-detail-msg {
         max-lines: 1;
-        text-overflow-ellipsis: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     </style>
     <h2><i18n-msg msgid="miscellaneous-projects">Miscellaneous</i18n-msg></h2>
@@ -127,7 +129,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </iron-image>
             </paper-button>
             <div class="detail">
-              <div class="item-detail-msg"><i18n-msg msgid="[[item.desc]]">[[item.name]]</i18n-msg></div>
+              <div class="item-detail-msg"><i18n-msg class="item-detail-msg" msgid="[[item.desc]]">[[item.name]]</i18n-msg></div>
             </div>
           </div>
           <div class="container-title">

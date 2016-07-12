@@ -1,19 +1,142 @@
 {
-"home" : {
-"description" : "Home menu name",
-"message" : "Page d'accueil"
-},
-"projects" : {
-"description" : "Projects menu name",
-"message" : "Projets"
-},
-"contact" : {
-"description" : "Contact menu name",
-"message" : "Contact"
-},
-"introductionText" : {
-  "description": "Introduction text",
-  "message": "Actuellement en études à Epitech. Je suis très intéressé par les nouvelles technologies et principalement par l'univers Android et Web.\n Pour ma 5e année il m'est possible d'avoir une alternance pour le premier semestre et ensuite un stage pour le deuxième semestre."
-
-}
+  "home" : {
+  "description" : "Home menu name",
+  "message" : "Page d'accueil"
+  },
+  "projects" : {
+  "description" : "Projects menu name",
+  "message" : "Projets"
+  },
+  "contact" : {
+  "description" : "Contact menu name",
+  "message" : "Contact"
+  },
+  "introductionText" : {
+    "description": "Introduction text",
+    "message": "Actuellement en études à Epitech. Je suis très intéressé par les nouvelles technologies et principalement par l'univers Android et Web.\n Pour ma 5e année il m'est possible d'avoir une alternance pour le premier semestre et ensuite un stage pour le deuxième semestre."
+  },
+  "ludaoo": {
+    "description": "Project Ludaoo",
+    "message": "Ludaoo"
+  },
+  "desc_project-misc_01": {
+    "description": "Description yt",
+    "message": "Toutes mes créations vidéos."
+  },
+  "desc_project-perso_01": {
+    "description": "Description Persosite",
+    "message": "Ceci est mon site personnel, fait entièrement avec Polymer."
+  },
+  "desc_project-school_01": {
+    "description": "Description Ludaoo",
+    "message": "Ludaoo est"
+  },
+  "desc_project-school_02": {
+    "description": "Description Mediblog",
+    "message": "Mediblog est"
+  },
+  "desc_project-school_03": {
+    "description": "Description Hayroad",
+    "message": "Hayroad est"
+  },
+  "desc_project-school_04": {
+    "description": "Description MDHelper",
+    "message": "MDHelper est"
+  },
+  "introduction": {
+    "description": "introduction",
+    "message": "Introduction"
+  },
+  "programming-skills": {
+    "description": "programming-skills",
+    "message": "Compétences"
+  },
+  "android": {
+    "description": "android",
+    "message": "Android"
+  },
+  "angularJS": {
+    "description": "angularJS",
+    "message": "AngularJS"
+  },
+  "html_css": {
+    "description": "html_css",
+    "message": "HTML/CSS"
+  },
+  "nodejs": {
+    "description": "nodejs",
+    "message": "NodeJS"
+  },
+  "JS": {
+    "description": "JS",
+    "message": "JS"
+  },
+  "mongodb": {
+    "description": "mongodb",
+    "message": "MongoDB"
+  },
+  "sql": {
+    "description": "sql",
+    "message": "SQL"
+  },
+  "php": {
+    "description": "php",
+    "message": "PHP"
+  },
+  "java": {
+    "description": "java",
+    "message": "Java"
+  },
+  "c++": {
+    "description": "c++",
+    "message": "C++"
+  },
+  "c#": {
+    "description": "c#",
+    "message": "C#"
+  },
+  "python": {
+    "description": "python",
+    "message": "Python"
+  },
+  "others": {
+    "description": "others",
+    "message": "Autres"
+  },
+  "terms-of-service": {
+    "description": "terms-of-service",
+    "message": "Conditions de service"
+  },
+  "report-technical-issue": {
+    "description": "report-technical-issue",
+    "message": "Rapporter un problème technique"
+  },
+  "miscellaneous-projects": {
+    "description": "miscellaneous-projects",
+    "message": "Divers"
+  },
+  "desc": {
+    "description": "desc",
+    "message": "..."
+  },
+  "perso-projects": {
+    "description": "perso-projects",
+    "message": "Projets personnels"
+  },
+  "close": {
+    "description": "close",
+    "message": "Fermer"
+  },
+  "school-projects": {
+    "description": "school-projects",
+    "message": "Projets avec l'école"
+  },
+  "pg": {
+    "description": "pg",
+    "message": "Paris Guillaume"
+  },
+  "main-languages": {
+    "description": "main-languages",
+    "message": "Langages maîtrisés"
+  }
 }

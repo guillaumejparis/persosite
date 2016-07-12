@@ -15,20 +15,128 @@
     "description": "Project Ludaoo",
     "message": "Ludaoo"
   },
-  "ludaooProject": {
-    "description": "Basic",
-    "message": ""
-  },
   "desc_project-misc_01": {
-    "description": "Description Ludaoo",
-    "message": "Ludaoo is too cool"
+    "description": "Description yt",
+    "message": "All my YouTube videos and creations."
   },
   "desc_project-perso_01": {
     "description": "Description Persosite",
-    "message": "This is my personal site, made with full Polymer.\n Test"
+    "message": "This is my personal site, made with full Polymer."
   },
-  "test": {
-    "description": "Contact menu name",
-    "message": "Contact"
+  "desc_project-school_01": {
+    "description": "Description Ludaoo",
+    "message": "Ludaoo is"
+  },
+  "desc_project-school_02": {
+    "description": "Description Mediblog",
+    "message": "Mediblog is"
+  },
+  "desc_project-school_03": {
+    "description": "Description Hayroad",
+    "message": "Hayroad is"
+  },
+  "desc_project-school_04": {
+    "description": "Description MDHelper",
+    "message": "MDHelper is"
+  },
+  "introduction": {
+    "description": "introduction",
+    "message": "Introduction"
+  },
+  "introductionText": {
+    "description": "introductionText",
+    "message": "Hello"
+  },
+  "programming-skills": {
+    "description": "programming-skills",
+    "message": "Programming skills"
+  },
+  "android": {
+    "description": "android",
+    "message": "Android"
+  },
+  "angularJS": {
+    "description": "angularJS",
+    "message": "AngularJS"
+  },
+  "html_css": {
+    "description": "html_css",
+    "message": "HTML/CSS"
+  },
+  "nodejs": {
+    "description": "nodejs",
+    "message": "NodeJS"
+  },
+  "JS": {
+    "description": "JS",
+    "message": "JS"
+  },
+  "mongodb": {
+    "description": "mongodb",
+    "message": "MongoDB"
+  },
+  "sql": {
+    "description": "sql",
+    "message": "SQL"
+  },
+  "php": {
+    "description": "php",
+    "message": "PHP"
+  },
+  "java": {
+    "description": "java",
+    "message": "Java"
+  },
+  "c++": {
+    "description": "c++",
+    "message": "C++"
+  },
+  "c#": {
+    "description": "c#",
+    "message": "C#"
+  },
+  "python": {
+    "description": "python",
+    "message": "Python"
+  },
+  "others": {
+    "description": "others",
+    "message": "Others"
+  },
+  "terms-of-service": {
+    "description": "terms-of-service",
+    "message": "Terms of service"
+  },
+  "report-technical-issue": {
+    "description": "report-technical-issue",
+    "message": "Report technical issue"
+  },
+  "miscellaneous-projects": {
+    "description": "miscellaneous-projects",
+    "message": "Miscellaneous"
+  },
+  "desc": {
+    "description": "desc",
+    "message": "..."
+  },
+  "perso-projects": {
+    "description": "perso-projects",
+    "message": "Personal Projects"
+  },
+  "close": {
+    "description": "close",
+    "message": "Close"
+  },
+  "school-projects": {
+    "description": "school-projects",
+    "message": "School Projects"
+  },
+  "pg": {
+    "description": "pg",
+    "message": "Paris Guillaume"
+  },
+  "main-languages": {
+    "description": "main-languages",
+    "message": "Main languages"
   }
 }
